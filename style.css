@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Dustismo Roman';
-    src: url('/Dustismo_Roman.woff2');
+    src: url('Dustismo_Roman.woff2');
 }
 
 
@@ -101,6 +101,7 @@ footer div a i {
 }
 footer div a p {
     text-decoration: underline;
+    font-size: 18px;
 }
 
 
