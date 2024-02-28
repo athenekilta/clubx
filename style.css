@@ -432,6 +432,7 @@ footer div a p {
   .navbar {
     
     background: none;
+    background-attachment: fixed;
   }
 
   
