@@ -1,124 +1,459 @@
 @font-face {
-    font-family: 'Dustismo Roman';
-    src: url('Dustismo_Roman.woff2');
+  font-family: "Dustismo Roman";
+  src: url("Dustismo_Roman.woff2");
 }
 
+@font-face {
+  font-family: "Mick Caster";
+  src: url("Mick Caster.ttf");
+}
 
+@font-face {
+  font-family: "Mick Caster Italic";
+  src: url("Mick Caster Italic.ttf");
+}
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-    font-family: 'Dustismo Roman', sans-serif;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #111111;
-    color: #FAEECF;
-}
+  font-family: "Dustismo Roman", sans-serif;
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #111111;
+  background-image: url("/tausta-assassin.svg");
+  background-size: 400px;
+  background-attachment: scroll;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  color: #faeecf;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 
-
-.teaser {
-    gap: 16px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    
-    
-}
-
-.headingSection {
-    margin: 0 0 25px 0;
 }
 
 h1 {
-    font-size: 42px;
-    margin: 4px 0;
-    font-family: 'Dustismo Roman', sans-serif;
+  font-size: 42px;
+  margin: 4px 0;
+  font-family: "Dustismo Roman", sans-serif;
 }
 
 h2 {
-    font-size: 36px;
-    margin: 0px 0 2px 0;
-    font-family: 'Dustismo Roman', sans-serif;
+  font-size: 36px;
+  margin: 0px 0 2px 0;
+  font-family: "Dustismo Roman", sans-serif;
 }
 
 h3 {
-    font-size: 23px;
-    margin: 4px 0;
-    font-family: 'Dustismo Roman', sans-serif;
+  font-size: 23px;
+  margin: 4px 0;
+  font-family: "Dustismo Roman", sans-serif;
 }
 
 h4 {
-    margin: 0 0 4px 0;
-    font-size: 22px;
+  margin: 0;
+  font-size: 22px;
 }
 h5 {
-    margin: 0 0 4px 0;
-    font-size: 15px;
+  margin: 0;
+  font-size: 18px;
+}
+h6 {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
 }
 
 #countdown {
-    font-size: 34px;
-    margin: 10px 0 0 0;
-    font-family: 'Dustismo Roman', sans-serif;
+  font-size: 34px;
+  margin: 10px 0 0 0;
+  font-family: "Dustismo Roman", sans-serif;
 }
 
 a {
-    color: #FAEECF;
-    font-size: 22px;
-    transition: all 0.1s;
+  color: #faeecf;
+  font-size: 22px;
+  transition: all 0.1s;
 }
 
-a:hover, a:active {
-    color: #AD3231;
+a:hover,
+a:active {
+  color: #ad3231;
 }
+
+
+
+.navbar {
+  width: 100%;
+  padding: 0px 3px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  background-color: #111111;
+  z-index: 1000;
+  top: 0;
+  background-image: url("/tausta-assassin.svg");
+
+  background-size: 400px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.navLink {
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+  transition-duration: 0.1s;
+}
+
+.navbar img {
+  height: 2.5rem;
+  padding-top: 1rem;
+  margin: 0 0.5rem;
+  transition-duration: 0.1s;
+}
+
+.navbar img:hover {
+  opacity: 0.7;
+}
+
+
+.noUnderline {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.button {
+  color: #111111;
+  background: #faeecf;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  transition-duration: 0.2s;
+  font-size: 1.1rem;
+}
+.button:hover {
+  background: #ad3231;
+  color: #111111;
+}
+
+
+
+.main {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 80vw;
+  max-width: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: -25vh;
+}
+
+.hero h1 {
+  font-family: "Mick Caster", sans-serif;
+}
+
+.hero img {
+  max-width: 250px;
+  width: 90%;
+  
+  margin-bottom: -40px;
+}
+
+.heroInfoRow {
+  margin-top: 0;
+  margin-bottom: 28px;
+  gap: 10px;
+  
+}
+.heroInfo {
+  text-align: center;
+  gap: 7px;
+  padding: 0 10px;
+}
+.heroInfo p, h1, h2, h3, h4, a {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.card-outer {
+  perspective: 1500px;
+}
+
+.card {
+  transform-style: preserve-3d;
+  transition: all 50ms;
+  height: 420px;
+  width: 300px;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  background-color: #faeecf;
+  color: #111111;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  outline: 1px solid transparent;
+}
+
+.back {
+  padding: 0rem;
+}
+
+.front {
+  transform: rotateY(0deg) rotateZ(0deg);
+  align-items: start;
+}
+
+.back {
+  transform: rotateX(180deg);
+}
+
+header {
+  background-color: #111111;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 
 
 footer {
-    display: flex;
-    margin: 15px 0 0 0;
+  display: flex;
+  padding: 2rem 0;
 }
 
 footer div a {
-    font-size: 15px;
-    
-    display: flex;
-    
-    
-    align-items: center;
-    text-decoration: none;
-    margin-right: 20px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 20px;
 }
+
 footer div a i {
-    font-size: 34px;
-    margin-right: 5px;
+  font-size: 34px;
+  margin-right: 5px;
 }
 .instagram {
-    
-    margin-right: 0px;
-}
-footer div a p {
-    text-decoration: underline;
-    font-size: 18px;
+  margin-right: 0px;
 }
 
+footer div a p {
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+.card-scroll-box {
+  position: sticky;
+  top: calc(50% - 220px);
+  position: -webkit-sticky;
+}
+
+#ticketSection {
+  min-height: 68vh;
+  padding: 3rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-width: 500px;
+}
+
+#ticketSection p, a, h3, h1 {
+  text-align: center;
+}
+
+.ticketRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.ticketElement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  gap: 10px;
+}
+.paddingBottom {
+  padding-bottom: 15px;
+}
+
+.ticketElement p, a, h3, h1, h4, h5, h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.smallGap {
+  gap: 3px;
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0;
+}
+
+.marginSides {
+  margin: 0 4px;
+}
+
+.ticketButton {
+  font-size: 1rem;
+  color: #111111;
+  background: #faeecf;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+.ticketButton:hover {
+  background: #ad3231;
+  color: #111111;
+}
+
+.ticketButtonLocked {
+  font-size: 1rem;
+  color: #111111;
+  background: #ad3231;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.2s;
+  border-radius: 5px;
+}
+
+.ticketButtonLocked:hover {
+  
+  color: #111111;
+  background: #842525;
+  
+}
+
+.salesStartLabel {
+
+  margin: 0;
+}
+.salesStart {
+  
+  margin: 0px 0 0 0;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+  .ticketRow {
+    
+    flex-direction: column;
+   
+  }
+
+  .heroInfo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .heroInfoRow {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .navLink {
+    background-color: #111111;
+    
+  }
+
+  
+}
 
 @media screen and (min-width: 768px) {
-    h1 {
-        font-size: 52px;
-    }
+  h1 {
+    font-size: 52px;
+  }
+  a,
+  h2 {
+    font-size: 38px;
+  }
 
-    a, h2 {
-        font-size: 38px;
-    }
+  h3 {
+    font-size: 28px;
+  }
 
-    h3 {
-        font-size: 28px;
-    }
+  #countdown {
+    font-size: 36px;
+  }
 
-    #countdown {
-        font-size: 36px;
-    }
+  .navbar {
+    
+    background: none;
+  }
+
+  
 }
+
+@media screen and (min-height: 768px) {
+  .cards {
+    margin-top: 100px;
+    gap: 100px;
+  }
+
+  .hero img {
+    max-width: 350px;
+    width: 90%;
+    
+    margin-bottom: -3rem;
+  }
+}
+
+
+
+

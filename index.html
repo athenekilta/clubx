@@ -2,58 +2,134 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Club X 2024</title>
+        <title>Club Assassin</title>
         <link rel="icon" type="image/x-icon" href="favicon.png">
 
-        <meta property='og:title' content='Club X'/>
+        <meta property='og:title' content='Club Assassin'/>
         <meta property='og:image' content='https://i.ibb.co/ryKfrcH/clubx-banner.png'/>
-        <meta property='og:description' content='Club X'/>
+        <meta property='og:description' content='Club Assassin'/>
         <meta property='og:url' content='athene.fi/clubx'/>
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='627' />
 
-
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="description" content="Athene Club X 2024" />
+        <meta name="description" content="Athene Club Assassin 2024" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Courier+Prime&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
-        
-
         <script src="https://kit.fontawesome.com/2e7c450778.js" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
 
         
     </head>
     <body>
-        <section class="teaser">
-            <div class="headingSection">
-                <h5>Save the date!</h5>
-                <h2>Athene's</h2>
-                <h1>Club X 2024</h1>
-                <h5>is happening</h5>
-                <h2>20.03.2024</h2>
+        <nav id="navbar" class="navbar">
+            <!--<a class="navLink" href="#">Club Assassin</a>-->
+            <a class="navLink" href="#"><img src="/a-logo.png" alt="Club Assassin"></a>
+            <p>
+                <a class="navLink" href="#details">Details</a>
+                <a class="navLink" href="https://instagram.com/atheneclubx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a class="navLink" href="https://t.me/clubx_24" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                <a class="navLink button" href="#ticketSection">Tickets</a>
+            </p>
+        </nav>
+        
+        <section class="hero">
+            <div class="wrapper">
+                <img class="heroImage" src="/club-assassin-logo.png" alt="Club Assassin">
 
+                <div class="ticketRow heroInfoRow">
+                    <div class="heroInfo ticketElement">
+                        <!--<h4>What?</h4>-->
+                        <h4>Athene's phuksi<br>party 2024</h4>
+                    </div>
+                    <div class="heroInfo ticketElement">
+                        <!--<h4>When?</h4>-->
+                        <h2>20.3.</h2>
+                        
+                    </div>
+                    <div class="heroInfo ticketElement">
+                        <!--<h4>Where?</h4>-->
+                        <h2>Maxine</h2>
+                    </div>
+                </div>
+                
+                <div class="ticketRow">
+                    <a id="details" href="#details" class="button marginSides noUnderline">Reveal the details</a>
+                    <a id="details" href="#ticketSection" class="button marginSides noUnderline">Get tickets</a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card-scroll-box rotate">
+                <div class="card-outer">
+                    <div class="card">
+                        <div class="front"><img src="/themeimg.png" alt="Theme" width="100%"></div>
+                        <div class="back"><img src="/themecard2.png" alt="Step into the shadows and unleash your inner assassin for a night of partying!" width="100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-scroll-box rotate">
+                <div class="card-outer">
+                    <div class="card">
+                        <div class="front"><img src="/sceneimg.png" alt="Scene" width="100%"></div>
+                        <div class="back"><img src="/scenecard2.png" alt="The night's events will unfold above the rooftops of Kamppi, as Club Assassin takes place in Nightclub Maxine!" width="100%"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-scroll-box rotate">
+                <div class="card-outer">
+                    <div class="card">
+                        <div class="front"><img src="/programimg.png" alt="Program" width="100%"></div>
+                        <div class="back"><img src="/programcard2.png" alt="Secret live performers will make the night even more exciting!" width="100%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    <section id="ticketSection">
+        <h1>What about tickets?</h1>
+        
+        <br>
+        <div class="ticketRow flexColumn">
+            <div class="ticketElement paddingBottom">
+                <h3>Kide.app</h3>
+                <p>Claim your access to experience the thrilling phases of the night through Kide.app!</p>
+                <div class="smallGap">
+                    <h4 class="salesStartLabel">Sales will start on</h4>
+                
+                    <h5>Thursday</h5>
+                    <h2 class="salesStart">7.3.</h2>
+                    <h4>at 12:00</h4>
+
+                </div>
+                
+                <a class="ticketButtonLocked"><i class="fa-solid fa-lock"></i> Sales open 7.3.</a>
+            </div>
+
+            <div class="ticketElement">
+                
+                <h6>We are also providing a limited number of tickets to specific guilds! Make sure to stay updated with announcements in your info channels!</h6>
                 
             </div>
             
+        </div>
+        
+    </section>
+    
+
+        <footer>
             <div>
-                <span id="countdown"></span>
-                <h4>until the theme reveal</h4>
-                <h5>which will take place</h5>
-                <h4>28.02.2024 14:00 @ Olkkari</h4>
+            <a href="https://t.me/clubx_24" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i><p>Join Telegram</p></a>
             </div>
-            
-            <footer>
-                <div>
-                <a href="https://t.me/clubx_24"><i class="fa fa-telegram" aria-hidden="true"></i><p>Join Telegram</p></a>
+            <div>
+            <a class="instagram" href="https://instagram.com/atheneclubx" target="_blank"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
                 </div>
-                <div>
-                <a class="instagram" href="https://instagram.com/atheneclubx"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
-            </div>
-            </footer>
-        </section>
+        </footer>
     </body>
 </html>
